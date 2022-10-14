@@ -1,6 +1,10 @@
 import { LockClosedIcon } from "@heroicons/react/solid";
+import { useEffect } from "react";
 
 export default function Login() {
+  useEffect(() => {
+    document.title = "Login";
+  }, []);
   return (
     <>
       <div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">

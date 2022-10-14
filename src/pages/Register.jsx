@@ -1,4 +1,9 @@
+import { useEffect } from "react";
+
 export default function Register() {
+  useEffect(() => {
+    document.title = "Register";
+  }, []);
   return (
     <>
       <div className="mx-0 lg:mx-80">
@@ -26,7 +31,7 @@ export default function Register() {
                         First name
                       </label>
                       <input
-                      className="mt-1 p-2 border focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                        className="mt-1 p-2 border focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                         type="text"
                         name="first-name"
                         id="first-name"
